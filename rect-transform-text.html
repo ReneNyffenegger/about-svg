@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>rect-transform-text</title>
+
+  <style>
+
+  .box {
+    border: 1px solid #f73;
+    padding: 2px;
+  }
+  
+  .box rect {
+    fill: #f95;
+  }
+  
+  .box text {
+    fill: #52d;
+    font: 10px sans-serif;
+    text-anchor: end;
+  }
+  
+  </style>
+
+</head>
+<body>
+
+  <svg class="box" width="513" height="57">
+
+    <g transform="translate(0,0)">
+      <rect width="282" height="17"></rect>
+      <text x="282" y="9.5" dy=".35em">420</text>
+    </g>
+
+    <g transform="translate(0,20)">
+      <rect width="513" height="17"></rect>
+      <text x="513" y="9.5" dy=".35em">513</text>
+    </g>
+
+    <g transform="translate(0,40)">
+      <rect width="479" height="479"></rect>
+      <text x="479" y="9.5" dy=".35em">479</text>
+    </g>
+
+  </svg>
+
+</body>
+</html>
