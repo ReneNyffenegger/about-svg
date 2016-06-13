@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>createElementNS</title>
+
+  <script type="text/javascript">
+
+    var svgNS = "http://www.w3.org/2000/svg";  
+
+    function main() {
+
+      var svg=document.getElementById('svg');
+
+      var w = parseFloat(svg.getAttributeNS(null, 'width'));
+      var h = parseFloat(svg.getAttributeNS(null, 'height'));
+
+      var circle = document.createElementNS(svgNS,"circle");
+
+      circle.setAttributeNS(null,"id"    ,"mycircle");
+      circle.setAttributeNS(null,"cx"    , w/2);
+      circle.setAttributeNS(null,"cy"    , h/2);
+      circle.setAttributeNS(null,"r"     , w > h ? h/2 : w/2);
+      circle.setAttributeNS(null,"fill"  ,"#f72");
+      circle.setAttributeNS(null,"stroke","none");
+
+      svg.appendChild(circle);
+
+    }
+
+  </script>
+
+</head>
+<body onload='main()'>
+
+  <svg id='svg' height="500" width="800" />
+  
+
+</body>
+</html>
