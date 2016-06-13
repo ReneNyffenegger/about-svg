@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>createElementNS</title>
+
+  <script type="text/javascript">
+
+    var svgNS = "http://www.w3.org/2000/svg";  
+
+    function main() {
+
+      var svg = document.getElementById('svg').getSVGDocument().rootElement;
+
+      for (var y=0; y<150; y+=5) {
+
+        var line = document.createElementNS(svgNS, 'line');
+
+        line.setAttributeNS(null, 'x1',   0);
+        line.setAttributeNS(null, 'x2', 150);
+        line.setAttributeNS(null, 'y1',   y);
+        line.setAttributeNS(null, 'y2',   y);
+        line.setAttributeNS(null, 'stroke', 'rgb(150,170,190)');
+        line.setAttributeNS(null, 'stroke-width', 1.5);
+
+        svg.appendChild(line);
+
+      }
+
+    }
+
+  </script>
+</head>
+<body onload='main()'>
+
+  Overlaying an svg object with blueish lines:<br>
+
+  <object id="svg" type="image/svg+xml" data="inkscape-simple.svg"></object>
+
+</body>
+</html>
