@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <title>style</title>
+
+  <script type="text/javascript">
+
+    var svgNS = "http://www.w3.org/2000/svg";  
+
+    function main() {
+
+      var svg = document.getElementById('svg').getSVGDocument().rootElement;
+
+      var rect=svg.getElementById('my-rectangle');
+
+      var rect_fill_color = rect.style.fill;
+
+      alert('rect_fill_color: ' + rect_fill_color);
+
+    }
+
+  </script>
+</head>
+<body onload='main()'>
+
+  <object id="svg" type="image/svg+xml" data="inkscape-simple.svg"></object>
+
+</body>
+</html>
+</head>
+<body>
+
+</body>
+</html>
