@@ -3,14 +3,29 @@
   xmlns   = "http://www.w3.org/2000/svg"
   version = "1.1"
   width   = "500"
-  height  = "500"
+  height  = "250"
 >
+
+  <!-- Draw circle with attributes only: -->
   <circle
-    cx            = "250"
-    cy            = "250"
-    r             = "210"
+    cx            = "125"
+    cy            = "105"
+    r             =  "50"
     fill          = "#e94"
     stroke        = "#f51"
     stroke-width  = "10"
   />
+
+  <!-- Draw circle with styles: -->
+  <circle
+    cx            = "375"
+    cy            = "145"
+    r             =  "50"
+    style="
+      fill        : #94e;
+      stroke      : #61f;
+      stroke-width: 10;
+    "
+  />
+
 </svg>
