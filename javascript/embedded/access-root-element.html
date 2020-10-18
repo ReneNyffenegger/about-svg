@@ -5,21 +5,21 @@
   <title>Simple embedded SVG test</title>
   <script>
 
-  function print(text) {
-    out.innerHTML += "<br>" + text;
-  }
 
   function main() {
 
+    console.log('x');
+
     var html_object   = document.getElementById('inkscape-drawing');
-    var svg_document  = html_object.getSVGDocument(); // or alternatively: html_object.contentDocument;
-    var svg_root_elem = svg_document.rootElement;     // or alternatively: svg_document.documentElement;
+    var svg_document  = html_object.getSVGDocument();  // or alternatively: html_object.contentDocument;
+//  var svg_document  = html_object.contentDocument;
+    var svg_root_elem = svg_document.rootElement;      // or alternatively: svg_document.documentElement;
     var svg_width     = parseFloat(svg_root_elem.getAttribute('width'));
 
-    print("html_object = "   + html_object);   // [object HTMLObjectElement]
-    print("svg_document = "  + svg_document);  // [object SVGDocument]
-    print("svg_root_elem = " + svg_root_elem); // [object SVGSVGElement]
-    print("svg_width = "     + svg_width);     //  150
+    console.log("html_object = "   + html_object);   // [object HTMLObjectElement]
+    console.log("svg_document = "  + svg_document);  // [object SVGDocument]
+    console.log("svg_root_elem = " + svg_root_elem); // [object SVGSVGElement]
+    console.log("svg_width = "     + svg_width);     //  150
 
   }
 
@@ -27,11 +27,11 @@
 </head>
 <body onload='main()'>
 
-<object id="inkscape-drawing" type="image/svg+xml" data="inkscape-simple.svg"></object>
-
-<div id='out'>
-</div>
-
+<object
+   id  ="inkscape-drawing"
+   type="image/svg+xml"
+   data="inkscape-simple.svg"
+ />
 
 </body>
 </html>
