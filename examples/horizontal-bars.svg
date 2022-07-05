@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<svg
+   width ="518"
+   height="62"  xmlns   = "http://www.w3.org/2000/svg"
+>
+
+<style>
+   rect {
+      fill: #f95;
+      height: 17;
+   }
+   text {
+      fill: #52d;
+      font: 10px sans-serif;
+      font-weight: bold;
+      text-anchor: end;
+   }
+</style>
+
+  <g transform="translate(5,5)">
+     <rect width="282" height="17"></rect>
+     <text x="282" y="12" dx="-3">420</text>
+  </g>
+
+  <g transform="translate(5,25)">
+     <rect width="513" height="17"></rect>
+     <text x="513" y="12" dx="-3">513</text>
+  </g>
+
+  <g transform="translate(5,45)">
+     <rect width="479" height="479"></rect>
+     <text x="479" y="12" dx="-3">479</text>
+  </g>
+
+</svg>
