@@ -1,0 +1,23 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 220 160"
+>
+
+  <style>
+
+    .st1 { font: italic 20px sans-serif;
+           fill: #fa3
+         }
+
+    .st2 { font: bold 30px serif;
+           fill: #a4f
+         }
+
+  </style>
+
+  <text x= "0"  y= "30" class="st1">Line one / style 1</text>
+  <text x="30"  y= "60" class="st1">Line two / style 1</text>
+  <text x="25"  y= "90" class="st2">Line three / style 2</text>
+  <text x="60"  y="120" class="st2">Line four / style 2</text>
+
+</svg>
