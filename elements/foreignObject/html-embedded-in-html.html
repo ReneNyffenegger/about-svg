@@ -1,0 +1,60 @@
+<doctype HTML>
+<html>
+<head>
+  <title>Embedded HTML in SVG, embedded in HTML</title>
+</head>
+<body>
+
+
+<svg
+   width ="290"
+   height="250"
+>
+
+  <style>
+    foreignObject {
+      background-color: #fea;
+      border: 1px solid blue;
+      padding: 3px;
+      overflow: auto;
+    }
+
+    div {
+      font: 10px;
+      font-family: sans-serif;
+      height: 100%;
+      width: max-content;
+      margin: 4px;
+    }
+
+    b {
+       color: #f43;
+    }
+  </style>
+
+
+  <foreignObject
+     width="220"
+     height="160"
+     transform="translate(70 10) rotate(20)">
+    <div>
+      <b>Rotated <code>&lt;foreignObject&gt;</b><p>
+      This example tries to<br>
+      demonstrate a rotated<br>
+      <code>&lt;div&gt;</code> HTML element</br>
+      in an SVG document that is<br>
+      embedded in a HTML<br>
+      document.<p>
+
+      Just for fun: a <a href='javascript:alert("link was clicked")'>link</a>.<p>
+
+      And some more text so that<br>
+      the (vertical) scroll bar<br>
+      makes sense.
+    </div>
+  </foreignObject>
+
+</svg>
+
+</body>
+</html>
